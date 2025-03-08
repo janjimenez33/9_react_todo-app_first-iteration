@@ -1,0 +1,17 @@
+.container {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin: 0;
+  color: white;
+  font-size: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.25rem;
+  }
+} 
