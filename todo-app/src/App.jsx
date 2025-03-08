@@ -1,6 +1,8 @@
 import { Header } from './Header'
 import { Subheader } from './Subheader'
 import { ListContainer } from './ListContainer'
+import { ListHeader } from './ListHeader'
+import { ItemsList } from './ItemsList'
 import './App.css'
 
 function App() {
@@ -41,7 +43,10 @@ function App() {
     <div className="app">
       <Header />
       <Subheader subtitle="Todo List Manager" />
-      <ListContainer items={todoItems} />
+      <ListContainer>
+        <ListHeader content="Todo List" />
+        <ItemsList itemsList={todoItems} />
+      </ListContainer>
     </div>
   )
 }
